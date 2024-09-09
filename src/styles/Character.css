@@ -1,12 +1,12 @@
+
+
 .character-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem; /* Espacio entre las tarjetas */
-    justify-content: center; /* Opcional: centra las tarjetas en el contenedor */
 }
 
 .character-card {
     flex: 1 1 calc(33.333% - 1rem); /* Tres tarjetas por fila con espacio */
     max-width: calc(33.333% - 1rem);
-    box-sizing: border-box; /* Asegura que el padding y el borde no afecten al ancho total */
 }
