@@ -1,14 +1,13 @@
-import React from "react";
-// import "../../styles/home.css";
-import { Character } from "../component/Character.jsx";
-import { Planets } from "../component/Planets.jsx";
-import { StarShips } from "../component/StarShips.jsx";
-import { Vehicles } from "../component/Vehicles.jsx";
+import React from 'react';
+import { Character } from '../component/Character.jsx';
+import { Planets } from '../component/Planets.jsx';
+import { StarShips } from '../component/StarShips.jsx';
+import { Vehicles } from '../component/Vehicles.jsx';
 
-export const Home = () => (
+export const Home = ({ onFavoriteToggle, favorites }) => (
     <div className="text-center mt-5">
         <div className="mt-4">
-            <Character />
+            <Character onFavoriteToggle={onFavoriteToggle} favorites={favorites} />
         </div>
         <div className="mt-5">
             <Planets />
